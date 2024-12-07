@@ -1,0 +1,63 @@
+-- Which framework we used so far?
+
+-- UI
+  --> TestNG -> Test New Generation _> Unit Testing Tool
+  --> DDT --> Data Driving Testing
+     -> @DataProvider
+     -> Short Video
+
+     --> Assert vs Verify
+          Hard Asserting -> Assert
+          Soft Asserting -> Verify
+
+
+
+          - Given user in login page
+          - when user  logged in by using valid credentials
+          - Then user should be in dashboardPage -- Hard Assert
+          - And following numbers needs to exist -- soft Assert
+             |bookCount | 100|
+             |borrowedBookCount | 200|
+             |userCount | 300|
+
+   --> Cucumber - Junit --> BDD
+   --> DDT - Scenario Outline  - example
+   --> Apache POI
+       -> Helper Library to Get Data from Excel Files
+
+
+   -- DB
+      --> Junit 5
+      --> Cucumber - Junit
+
+   -- API
+     --> Junit 5
+        - SoftAssert vs HardAssert
+        DDT -> @ParameterizedTest
+     --> Cucumber - Junit
+
+
+     1 - Requirement
+     2 - Read Documents
+        --> BaseURL + ENDPOINT
+        --> Parameters
+          -> Path Param
+          -> Query Param
+    --> Headers
+          -> Request Headers
+            -> Accept --> application/json --> Hey API Send me data in JSon format
+            -> Content-Type --> application/json
+            -> Authorisation - Who we are?
+          -> Response Headers
+             --> Content-Type --> application/json -- Hey client I am sending data in json format
+    --> HTTP Response
+       -> Get - Post -Put -Delete - patch
+       -> OPTIONS - HEAD
+    --> Status Code
+       -> 2XX -> Successful --> 200 - 201 - 204
+       -> 4XX -> client Error --> 400 - 401 - 403 - 404
+       -> 5XX -> server Error --> 500 - 501 - 503
+    3 - Manual Testing
+      -> PostMan
+      -> Postman Automation -> OPTION
+    4 -
