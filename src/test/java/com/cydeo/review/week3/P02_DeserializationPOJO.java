@@ -65,7 +65,6 @@ public class P02_DeserializationPOJO extends FakeStoreTestBase {
         CategoryPOJO category = firstProduct.getCategory();
         System.out.println("category = " + category);
 
-
         System.out.println("====== GET ALL PRODUCTS ======");
         List<Product> allProducts = jp.getList("", Product.class);
         System.out.println("allProducts = " + allProducts);
